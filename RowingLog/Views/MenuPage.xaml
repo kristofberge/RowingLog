@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mvxViews:MvxContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mvxViews="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:RowingLog.ViewModels;assembly=RowingLog"
+    xmlns:common="clr-namespace:RowingLog.Common;assembly=RowingLog"
+    x:TypeArguments="viewModels:MenuViewModel"
+    IconImageSource="{x:Static common:Images.Hamburger}"
+    x:Name="thisMenu"
+    x:Class="RowingLog.Views.MenuPage">
+    <StackLayout>
+        <Label
+            Padding="0,50,0,20"
+            Text="Rowing Log"
+            FontSize="Large"
+            HorizontalOptions="Fill"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="OrangeRed"/>
+        <mvxViews:MvxListView
+            ItemsSource="{Binding MenuItems}"
+            SeparatorVisibility="None">
+            <mvxViews:MvxListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell
+                        Text="{Binding Text}"
+                        Command="{Binding Command}"
+                        CommandParameter="{Binding Page}"/>
+                </DataTemplate>
+            </mvxViews:MvxListView.ItemTemplate>
+        </mvxViews:MvxListView>
+    </StackLayout>
+</mvxViews:MvxContentPage>

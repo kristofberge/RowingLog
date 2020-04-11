@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mvxViews:MvxContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mvxViews="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:RowingLog.ViewModels;assembly=RowingLog"
+    x:TypeArguments="viewModels:Concept2ViewModel"
+    x:Class="RowingLog.Views.Contept2Page">
+    <StackLayout>
+        <Label
+            Text="Concept 2 Log data"
+            FontSize="Large"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+</mvxViews:MvxContentPage>
