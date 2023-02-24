@@ -17,7 +17,7 @@
     <PackageReference Include="MvvmCross" Version="6.4.2" />
     <PackageReference Include="Refit" Version="5.1.54" />
     <PackageReference Include="MvvmCross.Forms" Version="6.4.2" />
-    <PackageReference Include="LiteDB" Version="5.0.5" />
+    <PackageReference Include="LiteDB" Version="5.0.13" />
     <PackageReference Include="System.Reactive" Version="4.3.2" />
     <PackageReference Include="System.Reactive.Linq" Version="4.3.2" />
   </ItemGroup>
